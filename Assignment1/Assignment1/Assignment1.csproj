@@ -66,7 +66,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Tests\htmlpostandget.html" />
     <Content Include="Tests\task1.aspx" />
+    <Content Include="Tests\task2.aspx" />
+    <Content Include="Tests\task2async.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -80,6 +83,20 @@
     </Compile>
     <Compile Include="Tests\task1.aspx.designer.cs">
       <DependentUpon>task1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\task2.aspx.cs">
+      <DependentUpon>task2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\task2.aspx.designer.cs">
+      <DependentUpon>task2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\task2async.aspx.cs">
+      <DependentUpon>task2async.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\task2async.aspx.designer.cs">
+      <DependentUpon>task2async.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
