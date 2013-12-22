@@ -1,0 +1,88 @@
+/*Update 2012 Nov Y2*/
+.frame9>.itemWrapper_2{
+	width:720px;
+	float:left;
+	padding:9px 6px;
+}
+
+.blue_titleWrapper{
+    width:720px;
+}
+
+.blue_title_left{
+	background:url(../img/dialog-blue-front.png) no-repeat;
+	width:113px;
+	height:46px;
+	float:left;
+}
+
+.blue_title_center{
+	background-image:url(../img/dialog-blue-middle.png);
+	background-repeat:repeat-x;
+	height:46px;
+	width:560px;
+	float:left;
+}
+
+.blue_title_right{
+	background:url(../img/dialog-blue-back.png) no-repeat;
+	width:40px;
+	height:46px;
+	float:left;
+}
+
+.blue_items_box{
+	width:226px;
+	float:left;
+	padding:9px 6px;
+}
+
+.frame9>.itemWrapper_2>.blue_items_box>.button{
+	margin-top:6px;
+}
+
+.frame9>.itemWrapper_2>.blue_items_box>.single .title{
+	min-height:30px;
+	text-align:left !important;
+}
+.frame9>.itemWrapper_2>.blue_items_box>.single a{
+	display:block;
+}
+.frame9>.itemWrapper_2>.blue_items_box>.single a:hover{
+	text-decoration:none;
+}
+.frame9>.itemWrapper_2>.blue_items_box>.single{
+	height:115px;
+	margin-top:4px;
+	padding:6px 13px;
+	color:#000;
+	font-size:11px;
+	font-family:tahoma, arial;
+	background-color:#fff;
+}
+.frame9>.itemWrapper_2>.blue_items_box>.single .content{
+	min-height:27px;
+}
+
+.frame9>.itemWrapper_2>.blue_items_box>.single>.bottom{
+	margin-top:10px;
+	font-size:14px;
+	text-transform:uppercase;
+}
+
+.frame9>.itemWrapper_2>.blue_items_box>.single h2.title{
+	font-family:tahoma, arial;
+	font-size:14px;
+	line-height:1.1em;
+	padding-bottom:6px;
+}
+
+.frame9>.itemWrapper_2>.blue_items_box>.blueBox{
+	background:url(../img/blue-sprt-l.gif) no-repeat;
+	background-position:center bottom;
+}
+
+.frame9>.itemWrapper_2>.blue_items_box>.single>.blue{
+	color:#107cc6;
+}
+/*End Of Edit*/

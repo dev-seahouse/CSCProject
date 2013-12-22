@@ -1,0 +1,76 @@
+/* Drop down styles*/
+div.selectbox-wrapper {
+  position:absolute;
+  width:400px;
+  background-color:white;
+  border:1px solid #ccc;
+  margin:0px;
+  margin-top:0;
+  padding:0px;
+  text-align:left;
+  max-height:300px;
+  overflow:auto;
+}
+
+/*Drop down list styles*/
+div.selectbox-wrapper ul {
+  list-style-type:none;
+  margin:0px;
+  padding:0px;
+}
+/* Selected item in dropdown list*/
+div.selectbox-wrapper ul li.selected { 
+  background-color: #EAF2FB;
+}
+
+/* Hover state for dropdown list */
+div.selectbox-wrapper ul li.current { 
+  background-color: #CDD8E4;
+}
+
+/* Drop down list items style*/
+div.selectbox-wrapper ul li {
+  list-style-type:none;
+  display:block;
+  margin:0;
+  padding:2px;
+  cursor:pointer;
+}
+
+/* Look and feel of select box */
+.selectbox 
+{
+  width:157px;
+  display : block;
+  text-align:left; 
+  background: url('../img/ddb-bg.gif') no-repeat right #fff;
+  cursor: pointer;
+}
+.selectbox2
+{
+  width:30px;
+  display : block;
+  text-align:left; 
+  background: url('../img/ddb-bg.gif') no-repeat right #fff;
+  cursor: pointer;
+  float:left;
+}
+.selectbox3
+{
+  width:80px;
+  display : block;
+  text-align:left; 
+  background: url('../img/ddb-bg.gif') no-repeat right #fff;
+  cursor: pointer;
+  float:left;
+}
+.selectbox4
+{
+  width:40px;
+  display : block;
+  text-align:left; 
+  background: url('../img/ddb-bg.gif') no-repeat right #fff;
+  cursor: pointer;
+  float:left;
+}
+

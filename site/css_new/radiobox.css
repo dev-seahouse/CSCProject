@@ -1,0 +1,45 @@
+.radio {
+	height: 25px;
+	width: 19px;
+	clear:left;
+	float:left;
+	margin: 0;
+	padding: 0 0 0 0;
+	background: url("../img/radio-bg.html");
+	background-repeat:no-repeat;
+	cursor: default;
+}
+.checkbox {
+	height: 25px;
+	width: 19px;
+	clear:left;
+	float:left;
+	margin: 0 0 3px;
+	padding: 0 0 0 26px;
+	background: url("../img/checkbox.html") no-repeat;
+	cursor: default;
+	text-align:left;
+}
+.checkbox input,.radio input {
+	display: none;
+}
+.checkbox input.show,.radio input.show {
+	display: inline;
+}
+.selected {
+	background-position: 0 -52px;
+}
+.block {
+	width: 50%;
+	float: left;
+}
+label {
+	xpadding-left:10px;
+	xfloat:left;
+	xtext-align:left;
+}
+body {
+font-family:arial;
+font-size:13px;
+color:#343434;
+}

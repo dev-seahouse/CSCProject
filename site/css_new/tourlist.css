@@ -1,0 +1,141 @@
+.eachTourWrapper{
+	width:231px;	
+}
+
+.tourBoxtop{
+	background-image: url(../img/tour-group/g-topBox.gif);
+	background-repeat: no-repeat;
+	height:8px;
+	width:231px;	
+}
+
+.tourBoxbody{
+	background-image: url(../img/tour-group/g-bodyBox.gif);
+	background-repeat: repeat-y;
+	width:231px;
+}
+
+.tourBoxbottom{
+	background-image: url(../img/tour-group/g-bottomBox.gif);
+	background-repeat: no-repeat;
+	height:8px;
+	width:231px;	
+}
+
+.border{
+	border:1px solid red;
+}
+
+ul#ulTour{
+	list-style-type: none;
+	padding:0px;
+	margin:0px;
+}
+
+ul#ulTour li{		
+	width:230px;
+	margin:0px 10px 10px 0px;
+	float:left;		
+}
+
+
+.tourframe_wrapper{
+	width:100px;
+	height:81px;
+}
+
+.tourframetop{
+	background-image: url(../img/tour-group/small-frameTop.gif);
+	background-repeat: no-repeat;
+	height:5px;
+	width:100px;	
+}
+
+.tourframebody{
+	background-image: url(../img/tour-group/small-framebody.gif);
+	background-repeat: repeat-y;
+	width:100px;
+	padding-left:5px;
+	height:68px;
+}
+
+.tourframebottom{
+	background-image: url(../img/tour-group/small-framebottom.gif);
+	background-repeat: no-repeat;
+	height:5px;
+	width:100px;	
+}
+
+.vtop{
+	vertical-align:top;
+}
+
+.floatLeft{
+	float:left;
+}
+
+.highText{
+	font-size:12px;
+	color:#2582b2;
+	font-weight:bold;
+	font-family:arial;	
+	padding-top:20px;
+}
+
+/* Bottom Listing Part */
+div.list_header {
+  margin-bottom: 6px;
+  color:#2582b2;
+  font-size:16px;
+  font-family:arial;
+}
+
+.oddCls{
+	background-color:#eef9f8;	
+}
+
+.evenCls{
+	background-color:#eef4e3;
+}
+
+.content_sty{
+	background-image: url(../img/tour-group/spDotted.png);
+	background-repeat: repeat-x;
+	padding-top:10px;
+	padding-bottom:5px;	
+	height:1px;
+}
+
+.rowStyle{
+	padding-bottom:15px;
+}
+
+.highlight_list{
+	list-style-image:url(../img/tour-group/square.gif);
+	background-repeat: no-repeat;	
+	width:190px;
+	color:#3da4c6;
+}
+
+.countryList{
+	width:730px;
+	float:left;
+	padding-left:10px;
+}
+
+.countryList .singleWrapperOnSided{
+	float:left;
+	/* width:329px; */
+}
+.countryList .singleCountryWrapper{
+	padding-top:10px;
+}
+
+.countryList .singleWrapperOnSided a.tourlink{
+	display:block;
+	padding:11px 0px;
+	font-size:12px;
+	background-image: url(../img/tour-group/spDotted.png);
+	background-repeat:repeat-x;
+	background-position:left bottom;
+}

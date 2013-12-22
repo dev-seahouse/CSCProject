@@ -1,0 +1,464 @@
+.divBreadcrumbWrapper{
+	padding: 0 3px;
+}
+
+.divSep{
+	border-bottom:1px solid #cccccc;
+	font-size:0;
+	height:0;
+}
+
+.divBreadcrumb{
+	float:left;
+	color:#999999;
+	font-size:12px;
+	text-transform:uppercase;
+}
+
+.divBreadcrumb a{
+	color:#999999;
+	text-decoration:underline;
+}
+
+.divBreadcrumb a:hover{
+	color:#2286B8;
+	text-decoration:none;
+}
+
+.divBreadcrumb small{
+	color:#339999;	
+}
+
+.divBreadcrumb span{
+	color:#2286D0;	
+}
+
+.divShareLinks{
+	float:right;
+}
+
+#divTourWrapper{
+	font-size:12px;
+	color:#000000;
+}
+
+#divTourWrapper h2{
+	font-size:24px;
+	color:#2582b2;
+}
+
+#divTourWrapper h3{
+	font-size:14px;
+	color:#2582b2;
+}
+
+#divTourWrapper .divColorDot{
+	background:url("../img/color-dot.png") no-repeat;
+	height:8px;
+	margin-top:6px;
+	margin-bottom:10px;	
+}
+
+#divTourWrapper .divCorner, #divTourWrapper .divSemiLeftCorner{
+	background:#15c2c2;
+	color:#fefefe;
+	font-weight:bold;
+	font-size:14px;
+	padding:3px 30px 3px 18px;
+	display:inline-block;			
+
+	
+}
+
+#divTourWrapper #divThumbWrapper{
+	width:320px;
+	float:right;	
+}
+
+#divTourWrapper .divPicCorner{
+	margin-top:10px;
+	background:#0fb1b1;	
+	padding:6px 0 0 6px;
+	width:80px;
+	height:62px;
+	display:block;			
+	float:left;
+	margin-left:15px;
+	margin-top:10px;
+}
+
+#divTourWrapper .divPicCorner img.selected{
+	border:1px solid #FAAE38;
+}
+
+#divTourWrapper #divLargePicFrameWrapper{	
+	width:400px;
+	float:right;	
+}
+
+#divTourWrapper #divPicFrame{
+	padding-left:96px;
+	padding-top:24px;	
+	width: 292px;
+	height: 265px;
+	background: url(../img/large-pic-frame.png) no-repeat;
+}
+
+#divTourWrapper ul{
+	margin:0;
+	padding:0;	
+}
+
+#divTourWrapper ul.ulGreenBullet{
+	padding:6px 0 25px 5px;
+}
+
+#divTourWrapper ul.ulGreenBullet li{
+	padding:2px 0 2px 15px;	
+	background: url(../img/green-bullet.png) no-repeat left 7px;
+	
+}
+
+#divTourWrapper .divMapWrapper{
+	width:290px;
+	float:right;
+	margin-left:20px;
+	margin-bottom:20px;	
+}
+
+#divTourWrapper .divMapCorner{
+	padding-top:7px;
+	padding-left:7px;
+	width:281px;	
+	height:263px;
+	border:1px solid #978d86;
+	background:#cccccc;
+	margin-top:5px;
+}
+
+#divTourWrapper .tdSemiCorner{
+	background:#15c2c2;
+	color:#fefefe;
+	font-weight:bold;
+	font-size:14px;
+	padding:3px 0 3px 18px;	
+	width:70px;	
+}
+
+#divTourWrapper .divDottedTitle{	
+	padding:3px 8px;
+	/*	width:270px;	*/
+	border-top:1px dotted #999999;
+	border-bottom:1px dotted #999999;
+	font-size:14px;
+	font-weight:bold;
+	color:#3399cc;
+	margin-left:1px;
+}
+
+#divTourWrapper  p{
+	margin:0;
+	padding:0;
+	padding:8px 2px;
+	line-height:16px;
+}
+
+#divTourWrapper  .divMeal{
+	padding-top:8px;
+	height:18px;
+	padding-left:35px;
+	background: url(../img/meal.png) no-repeat 3px top;
+	margin-bottom:25px;	
+}
+
+#divTourWrapper  .spNote{
+	color:#15c2c2;
+	font-weight:bold;
+}
+
+#divTourWrapper  .spNoteMsg{
+	color:#ff6633;	
+}
+
+#divTourWrapper .spGreenBold{
+	color:#009999;
+	font-weight:bold;
+}
+
+#divTourWrapper ul.ulGreenStar{
+	padding-top:3px;
+	padding-bottom:15px;
+}
+
+#divTourWrapper ul.ulGreenStar li{
+	padding:1px 0 1px 15px;	
+	background: url(../img/green-star.png) no-repeat left 3px;
+}
+
+#divTourWrapper .tblCorner th{
+	vertical-align:top;
+	text-align:left;
+	font-weight:bold;
+	color:#ffffff;
+	padding: 5px 8px;	
+}
+
+#divTourWrapper .tblCorner td{
+	text-align:center;
+	vertical-align:middle;
+	color:#333333;
+	background: #f0e3cf;	
+	padding:5px 5px;
+}
+
+
+#divTourWrapper .tdEmailUs, #divTourWrapper .tdAvailNow, #divTourWrapper .tdSellingFast{
+	width:87px;
+	padding:0 !important;
+}
+
+#divTourWrapper .tdEmailUs a, #divTourWrapper .tdAvailNow a, #divTourWrapper .tdSellingFast a{
+	display:block;
+	width:87px;
+	height:46px;	
+}
+
+#divTourWrapper .tdEmailUs a{
+	background: url(../img/email-us2.png) no-repeat -1px -2px;
+	width:91px;
+}
+#divTourWrapper .tdEmailUs a:hover{
+	background-position:-94px -2px;
+}
+
+#divTourWrapper .tdAvailNow a{
+	background: url(../img/available-now.png) no-repeat;
+}
+
+#divTourWrapper .tdSellingFast a{
+	background: url(../img/selling-fast.png) no-repeat;
+}
+
+#divTourWrapper ul.ulRedStar li{
+	padding:1px 0 1px 16px;	
+	background: url(../img/red-star.png) no-repeat left 5px;
+}
+
+#divTourWrapper .divNote{
+	margin:10px 0;
+	padding: 10px 12px;
+	background: #f1f1f1;
+	border:1px solid #cccccc;
+}
+
+#divTourWrapper #divPackageWrapper{	
+	padding:5px 0 10px 0;		
+}
+
+#divPackageWrapper label{
+	font-size:18px;	
+	/*	for line height*/
+	float:right;
+	display:block;
+
+}
+
+#divPackageWrapper #divPackageFull label{
+	padding-right:80px;
+	background:url(../img/package-full-bg.png) no-repeat right center;
+	margin-top:-25px;
+
+}
+
+#divPackageWrapper #divPackageLand label{
+	padding-right:50px;
+	background:url(../img/package-land-bg.png) no-repeat right center;
+	margin-top:-25px;
+}
+
+#divPackageWrapper #divPackageFull{
+	float:left;
+	padding:5px 8px;	
+	margin-right:10px;
+	
+	border:1px solid #ebece2;
+	line-height:25px;	
+	/* curvy corner script will auto detect this and do necessary action in IE instead of add dynamically in page load	*/
+  -webkit-border-top-radius:5px;  
+  -moz-border-radius:5px; 	
+	
+		width:220px;
+		
+}
+
+#divPackageWrapper #divPackageLand{
+	float:left;
+	padding:5px 8px;	
+	border:1px solid #ebece2;
+	line-height:25px;
+	/* curvy corner script will auto detect this and do necessary action in IE instead of add dynamically in page load	*/
+	-webkit-border-top-radius:5px;  
+  -moz-border-radius:5px;
+	
+		width:200px;
+}
+
+#divPackageWrapper input[type='radio']{
+	width:35px;	
+	
+}
+
+#divPackageWrapper .divPackageActive{
+	background:#87cfcf;
+}
+
+#divPackageWrapper .divPackageActive label{
+	color:#ffffff;		
+}
+
+#divPackageWrapper .divPackageInActive{
+	background:#f6f7f2;
+}
+
+#divPackageWrapper .divPackageInActive label{
+	color:#009999;	
+}
+
+/*	divImageSlider	*/
+#divTourWrapper #divImageSliderWrapper{	
+	width:600px;
+	margin:auto;
+}
+
+#divTourWrapper #divImageSliderWrapper .multiple li {
+	padding-right:11px;
+	padding-left:11px;
+	width: 128px;				
+}
+
+#divTourWrapper #divImageSliderWrapper .divSliderImageCorner{
+	padding-top:6px;
+	padding-left:6px;
+	width:124px;
+	height:102px;	
+	background:#0fb1b1;
+	margin-bottom:5px;	
+}
+
+#divTourWrapper #divImageSliderWrapper a{
+	display:block;
+	font-weight:bold;
+	color:#666666;
+	text-decoration:none;
+}
+
+#divTourWrapper #divImageSliderWrapper a:hover{
+	color:#009999;
+}
+
+#divTourWrapper #divImageSliderWrapper a:hover .divSliderImageCorner{
+	background:#d9d9d9;
+}
+
+.tick-bird {	
+  background-image: url(../img/tick-bird.gif);
+  background-repeat: no-repeat;
+  background-position: 0px 2px;
+  padding-left: 20px;
+  margin-top: 8px;
+	line-height:17px;
+}
+
+a.aBtnGreen{
+	display:inline-block;	
+	color:#fff;
+	font-family:tahoma,arial,verdana;
+	font-weight:bold;
+	background:url(../img/btnGreen-bg.gif);
+	background-repeat:repeat-x;	
+	padding:0 10px;	
+	text-decoration:none;
+	line-height:18px;
+	height:19px;	
+	margin:0 3px;
+}
+
+
+/*	mice page	*/
+#divMiceWrapper h2{
+	font-size:20px;
+	color:#2582b2;
+	margin:5px 0;
+}
+
+#divMiceWrapper h2 span{
+	font-size:32px;
+	font-weight:bold;
+}
+
+#divMiceWrapper h3{
+	font-size:14px;
+	color:#F76B0D;
+	margin:5px 0;
+}
+
+#divMiceWrapper p{	
+	margin:10px 0 20px 0;
+	line-height:18px;
+}
+
+#divMiceWrapper ul.miceBirdS{
+	list-style-image: url(../img/list-bullet-bird.png);
+}
+
+#divMiceWrapper ul.miceBirdS li{
+	margin-left:34px;
+	margin-top:12px;		
+}
+
+#divMiceWrapper  ul.miceBirdS li a{
+	color:#2286D0;
+	font-size:14px;
+}
+
+
+#divMiceWrapper ul.ulGreenBullet{
+	margin:15px 0;
+	list-style-image: url(../img/green-bullet.png);
+}
+
+#divMiceWrapper ul.ulGreenBullet li{
+	margin:6px 20px;
+}
+
+#divMiceWrapper a{
+	color:#DC4D00;
+}
+
+#divMiceWrapper a.aBackToTop{
+	display:inline-block;
+	padding-left: 15px;
+	background: url(../img/top-orange.gif) no-repeat 0 6px;
+}
+
+/*	request for quotation page	*/
+#divMiceRfqWrapper h2{
+	font-size:20px;
+	color:#2582b2;
+	margin:5px 0;
+}
+
+#divCareerWrapper ul{
+	margin:0;
+	padding:0;	
+}
+
+#divCareerWrapper ul.ulGreenBullet{
+	padding:6px 0 25px 5px;
+}
+
+#divCareerWrapper ul.ulGreenBullet li{
+	padding:2px 0 2px 15px;	
+	background: url(../img/green-bullet.png) no-repeat left 7px;
+	
+}
