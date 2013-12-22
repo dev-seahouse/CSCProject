@@ -70,8 +70,7 @@
     <Content Include="Tests\task1.aspx" />
     <Content Include="Tests\task2.aspx" />
     <Content Include="Tests\task2async.aspx" />
-    <Content Include="Tests\testDropDown.aspx" />
-    <Content Include="Tests\WebForm2.aspx" />
+    <Content Include="Task3\testDropDown.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -101,19 +100,12 @@
     <Compile Include="Tests\task2async.aspx.designer.cs">
       <DependentUpon>task2async.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Tests\testDropDown.aspx.cs">
+    <Compile Include="Task3\testDropDown.aspx.cs">
       <DependentUpon>testDropDown.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Tests\testDropDown.aspx.designer.cs">
+    <Compile Include="Task3\testDropDown.aspx.designer.cs">
       <DependentUpon>testDropDown.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Tests\WebForm2.aspx.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Tests\WebForm2.aspx.designer.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

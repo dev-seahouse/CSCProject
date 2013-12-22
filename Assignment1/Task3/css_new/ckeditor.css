@@ -1,0 +1,39 @@
+.featuredTourHeaderWrapper{
+	width:911px;
+	height:82px;
+	background:url(../img/featured-tour-bg.gif) repeat-x top;
+}
+.featuredTourHeaderWrapper>.leftColumn{
+	width:295px;
+	padding:20px 15px 0px 35px;
+	float:left;
+}
+.featuredTourHeaderWrapper>.rightColumn{
+	width:516px;
+	padding:20px 15px 0px 35px;
+	float:left;
+}
+.featuredTourHeaderbottom{
+	width:911px;
+	background:url(../img/featured-tour-bottom-bg.gif) no-repeat center;
+}
+
+.featuredTourHeaderbottom_ip{
+	width:690px;
+	background:url(../img/featured-tour-bottom-bg.gif) no-repeat left;
+}
+
+.featuredTourHeaderWrapper_ip{
+	width:98%;
+	height:82px;
+	padding:5px 10px;
+	background:url(../img/featured-tour-bg.gif) repeat-x top;
+}
+
+.featuredTourFlowerFooter{
+	width:90%;
+	padding:5px 10px 50px 0;
+	background:url(../img/flower-footer.png) no-repeat bottom;
+	margin-left:50px;
+
+}

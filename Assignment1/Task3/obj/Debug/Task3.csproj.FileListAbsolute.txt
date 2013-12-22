@@ -1,0 +1,6 @@
+E:\gitrepos\CSCProject\Assignment1\Task3\bin\Task3.dll.config
+E:\gitrepos\CSCProject\Assignment1\Task3\bin\Task3.dll
+E:\gitrepos\CSCProject\Assignment1\Task3\bin\Task3.pdb
+E:\gitrepos\CSCProject\Assignment1\Task3\obj\Debug\Task3.csprojResolveAssemblyReference.cache
+E:\gitrepos\CSCProject\Assignment1\Task3\obj\Debug\Task3.dll
+E:\gitrepos\CSCProject\Assignment1\Task3\obj\Debug\Task3.pdb
