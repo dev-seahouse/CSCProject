@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml;
+using System.Xml.Linq;
 
 namespace Assignment1.Tests
 {
@@ -23,9 +24,6 @@ namespace Assignment1.Tests
         protected void Page_Load(object sender, EventArgs e)
         {
 
-
-
-
         }
 
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
@@ -37,7 +35,6 @@ namespace Assignment1.Tests
                 HttpWebRequest request = CreateRequest(_url, _action);
                 request.BeginGetRequestStream(new AsyncCallback(GetRequestStreamCallback), request);
             }
-
 
         }
 
@@ -71,23 +68,38 @@ namespace Assignment1.Tests
         public void GetRequestStreamCallback(IAsyncResult callbackResult)
         {
             HttpWebRequest webRequest = (HttpWebRequest)callbackResult.AsyncState;
-            XmlDocument soapevelop = createSoapEnvelop("", value);
-           
+            XmlDocument soapevelop = createSoapEnvelop("", value);          
             Stream postStream = webRequest.EndGetRequestStream(callbackResult);
             soapevelop.Save(postStream);
             webRequest.BeginGetResponse(new AsyncCallback(GetResponseStreamCallback), webRequest);
-
         }
 
         void GetResponseStreamCallback(IAsyncResult callbackResult)
         {
             HttpWebRequest request = (HttpWebRequest)callbackResult.AsyncState;
             HttpWebResponse response = (HttpWebResponse)request.EndGetResponse(callbackResult);
-            using (StreamReader httpWebStreamReader = new StreamReader(response.GetResponseStream()))
-            {
-                string result = httpWebStreamReader.ReadToEnd();
-                Debug.WriteLine(result);
-            }
+            XmlDocument wsResponseXmlDoc = new XmlDocument();
+            wsResponseXmlDoc.Load(response.GetResponseStream());
+            XmlNode root = wsResponseXmlDoc.DocumentElement;
+            String xmlData = root.InnerText;
+            WebUtility.HtmlDecode(xmlData);
+            wsResponseXmlDoc.LoadXml(xmlData);
+            Debug.WriteLine(xmlData);
+            //XmlNode currentWeather = root.SelectSingleNode("//GetWeatherResult");
+            //Debug.WriteLine(currentWeather.InnerText);
+            //XmlNodeList xnList = wsResponseXmlDoc.SelectNodes("/");
+            //foreach (XmlNode xn in xnList)
+            //{
+            //    Debug.WriteLine(xn.InnerText);
+            //}
+            //String xmlString = wsResponseXmlDoc.InnerXml;
+            
+            //Debug.WriteLine(xmlString);
+            XmlTextWriter writer = new XmlTextWriter(Server.MapPath("xmlweather.xml"),null);
+            writer.Formatting = Formatting.Indented;         
+            wsResponseXmlDoc.Save(writer);
+            
+            writer.Close();
 
         }
     }
