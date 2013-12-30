@@ -464,6 +464,7 @@
     <Content Include="search.html" />
     <Content Include="sys\js\accommodation-searchbox.js" />
     <Content Include="task3noajax.aspx" />
+    <Content Include="task4ajax.aspx" />
     <Content Include="task4noajax.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -478,6 +479,13 @@
     </Compile>
     <Compile Include="task3noajax.aspx.designer.cs">
       <DependentUpon>task3noajax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="task4ajax.aspx.cs">
+      <DependentUpon>task4ajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="task4ajax.aspx.designer.cs">
+      <DependentUpon>task4ajax.aspx</DependentUpon>
     </Compile>
     <Compile Include="task4noajax.aspx.cs">
       <DependentUpon>task4noajax.aspx</DependentUpon>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="task4noajax.aspx.cs" Inherits="Task3.task4noajax" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="task4ajax.aspx.cs" Inherits="Task3.task4ajax" %>
 
 <!DOCTYPE html>
 
@@ -1071,11 +1071,13 @@
                     <br />
                     <!-- Asp.net form -->
                     <form runat="server">
+                        <asp:ScriptManager ID="ScriptManager" runat="server" />
+                         <asp:UpdatePanel ID="upSetSession" runat="server">
+                         <ContentTemplate>
                         <table cellspacing='8' class='formTable2'>
                             <tr>
                                 <td class='label'>Country : </td>
-                                <td>
-                                    
+                                <td>                                     
                                     <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="true" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
                                         <asp:ListItem Value="0">----Select a country ---</asp:ListItem>
                                         <asp:ListItem Value="America">America</asp:ListItem>
@@ -1101,7 +1103,8 @@
                                         <asp:ListItem>Taiwan</asp:ListItem>
                                         <asp:ListItem>Thailand</asp:ListItem>
                                         <asp:ListItem>Vietnam</asp:ListItem>
-                                    </asp:DropDownList>                                   
+                                    </asp:DropDownList> 
+                                                                    
                                 </td>
                                 <td class='label'>Destination : </td>
                                 <td>
@@ -1125,6 +1128,12 @@
                             </tr>
                             <tr><td colspan="2"><asp:Label runat="server" ID="Label1"></asp:Label></td></tr>
                         </table>
+                         </ContentTemplate>
+                              <Triggers>
+                <asp:AsyncPostBackTrigger ControlID="DropDownList1" 
+                    EventName="SelectedIndexChanged" />
+            </Triggers> 
+                        </asp:UpdatePanel> 
                     </form> <!-- End of asp.net form -->
                 </div>
                 <!-- endof divGroupTourSearchBox -->

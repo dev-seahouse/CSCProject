@@ -11,7 +11,7 @@ using System.Xml;
 
 namespace Task3
 {
-    public partial class task4noajax : System.Web.UI.Page
+    public partial class task4ajax : System.Web.UI.Page
     {
         string _url = "http://www.webservicex.net/globalweather.asmx";
         //Create soap action string
@@ -34,7 +34,8 @@ namespace Task3
 
         }
 
-        public void getCities(string value){
+        public void getCities(string value)
+        {
 
             HttpWebRequest request = CreateRequest(_url, _getCitiesAction);
             XmlDocument soapevelop = createSoapEnvelopCities(value);
@@ -47,7 +48,7 @@ namespace Task3
             nsmgr.AddNamespace("default", "http://www.webserviceX.NET");
             XmlNode cities = wsResponseXmlDoc.SelectSingleNode("/soap:Envelope/soap:Body/default:GetCitiesByCountryResponse/default:GetCitiesByCountryResult", nsmgr);
             string xmldata = WebUtility.HtmlDecode(cities.InnerText);
-            if (xmldata!="</NewDataSet>")
+            if (xmldata != "</NewDataSet>")
             {
                 wsResponseXmlDoc.LoadXml(xmldata);
                 XmlNodeList node = wsResponseXmlDoc.SelectNodes("//NewDataSet/Table/City");
@@ -55,7 +56,7 @@ namespace Task3
                 foreach (XmlNode n in node)
                 {
                     ListItem l = new ListItem();
-                    l.Text = n.InnerXml.ToString();              
+                    l.Text = n.InnerXml.ToString();
                     DropDownCities.Items.Add(l);
                 }
             }
@@ -129,11 +130,11 @@ namespace Task3
         {
             XmlDocument soapEvelope = new XmlDocument();
             soapEvelope.PreserveWhitespace = true;
-            soapEvelope.LoadXml(@"<soap:Envelope xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:soap=""http://schemas.xmlsoap.org/soap/envelope/""><soap:Body><GetCitiesByCountry xmlns=""http://www.webserviceX.NET""><CountryName>"+countryName+"</CountryName></GetCitiesByCountry></soap:Body></soap:Envelope>");
+            soapEvelope.LoadXml(@"<soap:Envelope xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:soap=""http://schemas.xmlsoap.org/soap/envelope/""><soap:Body><GetCitiesByCountry xmlns=""http://www.webserviceX.NET""><CountryName>" + countryName + "</CountryName></GetCitiesByCountry></soap:Body></soap:Envelope>");
             return soapEvelope;
         }
 
-        
+
 
         private static void InsertSoapEnvelopeIntoWebRequest(XmlDocument soapEnvelopeXml, HttpWebRequest webRequest)
         {
