@@ -452,3 +452,43 @@ namespace Assignment1.Tests
     }
 }
 ```
+
+### How to use ajax update panel
+```
+   <script type="text/javascript">
+        function BtnClick() {
+            var label = document.getElementById('<%=Label2.ClientID %>');
+            label.innerText = 'Waiting...';
+        }
+    </script>
+    <asp:ScriptManager ID="ScriptManager1" runat="server" />
+        <div>
+            <asp:Label ID="Label1" runat="Server"></asp:Label>
+            <br />
+            <asp:UpdatePanel ID="UpdatePanel1" runat="Server">
+                <ContentTemplate>
+                    <asp:Label ID="Label2" runat="server"></asp:Label>
+                    <br />
+                    <asp:Label ID="Label3" runat="server"></asp:Label>
+                    <br />
+                    <asp:Button ID="Button2" runat="server" Text="Click Me Again" OnClick="Button2_Click" OnClientClick="BtnClick()" />
+                </ContentTemplate>
+            </asp:UpdatePanel>
+        </div>
+
+The back C# code is:
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            Label1.Text = "The time now is " + System.DateTime.Now.ToString();
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            // Simulate a time-consuming task.
+            Thread.Sleep(3000);
+
+            Label2.Text = "The time now is " + System.DateTime.Now.ToString();
+            Label3.Text = "Another control is also updated: The time now is " + System.DateTime.Now.ToString();
+        }
+
+```
